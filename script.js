@@ -48,12 +48,12 @@ Particle.prototype.update = function () {
 function init () {
     particleArray = []
 
-    for (let i = 0; i < 100; i++) {
-        let size = Math.random() * 10;
+    for (let i = 0; i < 15; i++) {
+        let size = Math.random() * 30;
         let x = Math.random() * (innerWidth - size * 2)
         let y = Math.random() * (innerHeight - size * 2)
-        let directionx = (Math.random() * .4) -.2
-        let directiony = (Math.random() * .4) -.2
+        let directionx = (Math.random() * .2) - .2
+        let directiony = (Math.random() * .2) - .2
         let color = 'black'
 
         particleArray.push(new Particle(x, y, directionx, directiony, size, color))
